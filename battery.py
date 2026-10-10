@@ -11,3 +11,6 @@ if __name__ == "__main__":
     percent = float(input("Battery %: "))
     power = float(input("Power draw (W): "))
     print(f"Runtime: {runtime_hours(percent, power):.1f} hours")
+
+    if percent < 20:
+        print("Warning: low battery! Return to the charging station.")
